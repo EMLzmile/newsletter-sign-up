@@ -19,34 +19,58 @@
 
   <div id="container">
   <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
+  <section id="sign-up" class="">
+    <div>
+      <div class="text">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="profit">
+          <li class="profit-item">Product discovery and building what matters</li>
+          <li class="profit-item">Measuring to ensure updates are a success</li>
+          <li class="profit-item">And much more!</li>
+        </ul>
+      </div>
+      <div class="form">
+        <form>
+          <label for="mail">
+            <span>Email address</span>
+            <span class="error invisible">Valid email required</span>
+          </label>
+          <input type="email" id="mail" name="mail" class="email" placeholder="email@company.com" required>
+          <button class="btn" type="submit" name="register">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+    <div id="banner"> 
+      <figure>
+        <picture>
+          <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width:400px)">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up" width="100%">
+        </picture>
+      </figure>
+    </div>
+  </section>
 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
+  <section id="success" class="invisible">
+    <div class="message">
+      <figure>
+        <img src="./assets/images/icon-success.svg" alt="icon-success">
+      </figure>
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <strong id="confirmMail">ash@loremcompany.com</strong>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    
+    <button class="btn" type="button">Dismiss message</button>
+  </section>
   <!-- Success message end -->
   
-  <div class="attribution">
+  <div class="attribution invisible">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
